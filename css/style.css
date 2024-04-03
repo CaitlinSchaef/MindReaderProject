@@ -1,7 +1,21 @@
-/* CSS files add styling rules to your content */
+/* Adobe fonts:
+(book)
+font-family: "bebas-neue-by-fontfabric", sans-serif;
+font-weight: 300;
+font-style: normal;
+
+(book is thinner than regular)
+
+(regular)
+font-family: "bebas-neue-by-fontfabric", sans-serif;
+font-weight: 400;
+font-style: normal;
+*/
 
 body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-family: "bebas-neue-by-fontfabric", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   margin: 2em;
 }
 
