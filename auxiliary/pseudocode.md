@@ -8,6 +8,10 @@ Blue button text is white: #ffffff
 Blue button color: #8bd8e2
 White refresh button blue color is: #8bd8e2
 
+more like make one card and then id the different stages and then call them with getelementid
+one card in html (shell) 
+in javascript you grab the html element with the text, we want if statements that identify what screen, if on a different screen put this text in 
+
 First stage:
 Large text at top: "I can read your mind"
 Small round button at bottom, says "GO"
