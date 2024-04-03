@@ -20,8 +20,14 @@ body {
   height: 100%;
 }
 
+.borderBlue {
+  background-color: #67aab3;
+}
+
 .container {
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -39,11 +45,20 @@ h4 {
   text-align: center;
   color: white;
   margin: 4px 2px;
+  width: 400px;
+  height: 70px;
+  justify-content: center;
 }
 
 .roundButton {
   border-radius: 50%;
   background-color: white;
   color: #8bd8e2;
+  border-color: #8bd8e2;
   padding: 20px;
+  font-size: 31px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
 }

@@ -10,9 +10,10 @@
 
 // define a variable for what page we are on  
 
-
+//the text that will be placed comes from JAVAscript not anything else!
 
 // either write an if statement or a switch statement that considers the page variable and sets the text for mainText depending on page
+// basically something like: if on this page, fill this info into mainText, bellowButtonTest, etc
 
 let mainText = document.getElementById('mainText')
 
