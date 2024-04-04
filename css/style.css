@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-  height: 100%;
+  height: 90%;
   display: flex;
   justify-content: center;
 }
@@ -37,16 +37,15 @@ h1 {
 p {
   color: #8bd8e2;
   font-style: bold;
-  position: absolute;
-  bottom: auto;
   font-size: 30px; 
-  margin: 0;
+}
+/* at one point you had this on p:
+ margin: 0;
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
+  */
 
 .blueButton {
   background-color: #8bd8e2;
@@ -55,14 +54,8 @@ p {
   margin: 4px 2px;
   width: 400px;
   height: 70px;
-  justify-content: center;
-  align-items: center;
   font-size: 40px;
-  margin: 0;
-  position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
 .roundButton {
@@ -72,8 +65,11 @@ p {
   border-color: #8bd8e2;
   padding: 20px;
   font-size: 31px;
-  position: absolute;
+  width: 100px;
+}
+
+/* at one point you had this on the round button:
+ position: absolute;
   bottom: 0;
   right: 0;
-  width: 150px;
-}
+  */

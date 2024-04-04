@@ -12,15 +12,15 @@
 // roundButton is actually a reset button, not a refresh button
 
 
-let mainText = document.getElementById('mainText')
+const mainText = document.getElementById('mainText')
 
-let blueButton = document.getElementById('blueButton')
+const blueButton = document.getElementById('blueButton')
 
-let roundButton = document.getElementById('roundButton')
+const roundButton = document.getElementById('roundButton')
 
-let belowButtonText = document.getElementById('belowButtonText')
+const belowButtonText = document.getElementById('belowButtonText')
 
-let userScreen = 1
+let userScreen = page1
 
 //let state1 = {
   //mainText.textContent = 'I can read your mind',
@@ -38,13 +38,20 @@ let userScreen = 1
 
 
 
-//add the redraw page to reset the page 
-function updatePage(){ //should i put an event listener in this function?
+function reWritePage() {
+function updatePage(){ 
   if (page1) {
-    // return state1
+    mainText.textContent = 'I can read your mind',
+    blueButton.textContent = '',
+    roundButton.textContent = 'Go',
+    belowButtonText.textContent = '',
   }
+
   else if (page2) {
-    // write code: replace text
+    mainText.textContent = 'Pick a number from 01-99',
+    blueButton.textContent = 'NEXT',
+    roundButton.textContent = '<i class="fa-solid fa-arrow-rotate-left"></i>',
+    belowButtonText.textContent = 'when you have your number click next',
   }
     else if (page3) {
     // write code: replace text
@@ -59,7 +66,7 @@ function updatePage(){ //should i put an event listener in this function?
     // write code: replace text
   }
 }
-
+}
 
 
 
@@ -68,11 +75,11 @@ blueButton.addEventListener('click', movePageForward)
 roundButton.addEventListener('click', resetToFirstPage)
 
 function movePageForward(){
-  screen = screen + 1
-  redrawPage()
+  userScreen = userScreen + 1
+  reWritePage()
 }
 
 function resetToFirstPage(){
-  screen = state1
-  redrawPage()
+  userScreen = state1
+  reWritePage()
 }
