@@ -49,36 +49,39 @@ function updatePage() {
   } else if (currentScreen === 2) {
     mainText.textContent = 'Pick a number from 01-99'
     blueButton.textContent = 'NEXT'
-    roundButton.textContent = 'b'
+    roundButton.innerHTML = '<i class="fa-solid fa-arrow-rotate-left"></i>'
     belowButtonText.textContent = 'when you have your number click next'
   } else if (currentScreen === 3) {
     console.log('page 3')
     mainText.textContent = 'Add both digits together to get a new number'
     blueButton.textContent = 'NEXT'
-    roundButton.textContent = 'd'
     belowButtonText.textContent = 'Ex: 14 is 1 + 4 = 5, click next to proceed.'
   } else if (currentScreen === 4) {
     console.log('page 4')
     mainText.textContent = 'Subtract your new number from the original number'
     blueButton.textContent = 'NEXT'
-    roundButton.textContent = 'b'
     belowButtonText.textContent = 'Ex: 14 - 5 = 9, click next to proceed.'
   } else if (currentScreen === 5) {
     console.log('page 5')
-    mainText.textContent = '0-&, 1-@, 2-#'
+    mainText.textContent = '0-&, 1-@, 2-#, 3-$, 4-%, 5-^, 6-*, 7-!, 8-#, 9-&, 3-$, 4-%, 5-^, 6-*, 7-!, 8-#, 9-&'
     blueButton.textContent = 'REVEAL'
-    roundButton.textContent = 'a'
     belowButtonText.textContent = 'Find your new number. Note the symbol beside the number.'
   } else if (currentScreen === 6) {
     console.log('page 6')
     mainText.textContent = '&'
-    blueButton.textContent = // hidden
-    roundButton.textContent = '<r'
     belowButtonText.textContent = 'Your symbol is: &' 
   }
+  hideBlueButton()
+  scrollText()
 }
 
-
+function hideBlueButton(){
+  if (currentScreen === 1 || currentScreen === 6) {
+    blueButton.style.display = "none"
+  } else {
+    blueButton.style.display = "block"
+  }
+}
 
 function movePageForward(){
   console.log('MOVE PAGE FORWARD')
@@ -101,6 +104,12 @@ roundButton.addEventListener('click', () => {
     resetToFirstPage()
   }
 })
+
+function scrollText() {
+  if (currentScreen === 5) {
+    mainText.style.display = "overflow: flow"
+  }
+}
 
 
 updatePage()
