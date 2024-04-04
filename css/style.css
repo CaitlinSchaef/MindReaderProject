@@ -37,12 +37,16 @@ h1 {
 p {
   color: #8bd8e2;
   font-style: bold;
-  margin: 4px 2px;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  bottom: 0; 
+  bottom: auto;
+  font-size: 30px; 
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 
 .blueButton {
   background-color: #8bd8e2;
