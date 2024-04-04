@@ -24,6 +24,33 @@ let roundButton = document.getElementById('roundButton')
 let belowButtonText = document.getElementById('belowButtonText')
 
 
+// this function base should work, but we will probably need to set the function to run only at the even of a button click?
+
+function updatePage(){
+  if (page1) {
+    // write code: replace text
+   // mainText = 'I can read your mind'
+    // blueButton = 'NEXT'
+   // roundButton = 'refresh'
+  }
+  else if (page2) {
+    // write code: replace text
+  }
+    else if (page3) {
+    // write code: replace text
+  }
+    else if (page4) {
+    // write code: replace text
+  }
+    else if (page5) {
+    // write code: replace text
+  }
+    else (page6) {
+    // write code: replace text
+  }
+}
+
+
 function init(){
   console.log("hello world!");
 }
