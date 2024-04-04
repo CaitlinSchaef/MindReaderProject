@@ -62,8 +62,9 @@ function updatePage() {
     blueButton.textContent = 'NEXT'
     belowButtonText.textContent = 'Ex: 14 - 5 = 9, click next to proceed.'
   } else if (currentScreen === 5) {
+    mainText.classList.add("overflow-scroll")
     console.log('page 5')
-    mainText.textContent = '0-&, 1-@, 2-#, 3-$, 4-%, 5-^, 6-*, 7-!, 8-#, 9-&, 3-$, 4-%, 5-^, 6-*, 7-!, 8-#, 9-&'
+    mainText.innerHTML = '<div class="overflow-scroll mh-100">0-& <br> 1-@<br> 2-#<br> 3-$<br> 4-%<br> 5-^<br> 6-*<br> 7-!<br> 8-#<br> 9-&<br> 3-$<br> 4-%<br> 5-^<br> 6-*<br> 7-!<br> 8-#<br> 9-& <br> 0-& <br> 1-@<br> 2-#<br> 3-$<br> 4-%<br> 5-^<br> 6-*<br> 7-!<br> 8-#<br> 9-&<br> 3-$<br> 4-%<br> 5-^<br> 6-*<br> 7-!<br> 8-#<br> 9-&</div>'
     blueButton.textContent = 'REVEAL'
     belowButtonText.textContent = 'Find your new number. Note the symbol beside the number.'
   } else if (currentScreen === 6) {
@@ -72,7 +73,7 @@ function updatePage() {
     belowButtonText.textContent = 'Your symbol is: &' 
   }
   hideBlueButton()
-  scrollText()
+  // scrollText()
 }
 
 function hideBlueButton(){
@@ -107,7 +108,7 @@ roundButton.addEventListener('click', () => {
 
 function scrollText() {
   if (currentScreen === 5) {
-    mainText.style.display = "overflow: flow"
+    mainText.classList.add("overflow-scroll")
   }
 }
 
