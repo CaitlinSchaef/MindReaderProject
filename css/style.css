@@ -34,10 +34,14 @@ h1 {
   color: #707070;
 }
 
-h4 {
+p {
   color: #8bd8e2;
   font-style: bold;
   margin: 4px 2px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0; 
 }
 
 .blueButton {
@@ -48,6 +52,13 @@ h4 {
   width: 400px;
   height: 70px;
   justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .roundButton {

@@ -2,11 +2,11 @@
 
 // define a variable and set it to your mainText id (html element)
 
-
+// update two different button call actions
 
 // set the text inside that variable to the first page text
 
-
+// you will need to write one function that randomizes the symbols except for remainders of 9
 
 // define a variable for what page we are on  
 
@@ -14,6 +14,7 @@
 
 // either write an if statement or a switch statement that considers the page variable and sets the text for mainText depending on page
 // basically something like: if on this page, fill this info into mainText, bellowButtonTest, etc
+
 
 let mainText = document.getElementById('mainText')
 
@@ -23,15 +24,30 @@ let roundButton = document.getElementById('roundButton')
 
 let belowButtonText = document.getElementById('belowButtonText')
 
+let screen = 1
+
+let state1 = {
+  mainText.textContent = 'I can read your mind',
+  blueButton.textContent = '',
+  roundButton.textContent = 'Go',
+  belowButtonText.textContent = '',
+}
+
+let state2 = {
+  mainText = 'Pick a number from 01-99'
+  blueButton = 'NEXT'
+  roundButton = // refresh arrow symbol
+  belowButtonText = 'when you have your number click next'
+}
+
+// maybe under this you should set variables like 'object 1' that contain all of the page contents to make the actual if statements easier
 
 // this function base should work, but we will probably need to set the function to run only at the even of a button click?
 
-function updatePage(){
+//add the redraw page to reset the page 
+function updatePage(){ //should i put an event listener in this function?
   if (page1) {
-    // write code: replace text
-   // mainText = 'I can read your mind'
-    // blueButton = 'NEXT'
-   // roundButton = 'refresh'
+    // return state1
   }
   else if (page2) {
     // write code: replace text
@@ -50,10 +66,11 @@ function updatePage(){
   }
 }
 
+// refresh button takes is actually a reset button 
 
-function init(){
-  console.log("hello world!");
+blueButton.addEventListener('click', movePageForward)
+
+function movePageForward(){
+  screen = screen + 1
+  redrawPage()
 }
-
-init()
-
