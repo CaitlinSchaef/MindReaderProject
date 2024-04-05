@@ -108,7 +108,7 @@ function generateSymbolArray() {
   symbolDiv.classList.add('overflow-scroll');
   symbolDiv.classList.add('mh-100');
   const symbols = ['!', '@', '#', '$', '%', '^', '*', '('];
-  for (let i = 1; i<= 99; i++) {
+  for (let i = 0; i<= 99; i++) {
     let innerSymbol = document.createElement('div');
     // console.log(i)
     if (i % 9 === 0) {
