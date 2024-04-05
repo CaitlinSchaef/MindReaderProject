@@ -49,6 +49,7 @@ function updatePage() {
   } else if (currentScreen === 5) {
     mainText.classList.add("overflow-scroll")
     console.log('page 5')
+    mainText.innerHTML = ''
     // mainText.innerHTML = '<div class="overflow-scroll mh-100">0-&, 1-@, 2-#, 3-$<br>  4-%, 5-^, 6-*, 7-! <br>  8-#, 9-&, 10-$, 11-% <br>  12-^, 13-*, 14-!, 15-#<br> 16-), 17-@, 18-&, 19-#<br> 20-$, 21-%, 22-^, 23-*<br> 24-!, 25-#,  26-@<br> 27-&, 28-%, 29-$ 30-^<br> 31-*, 32-!, 33-#, 34-$<br> 35-@, 36-&, 37-!, 38-)<br>, 39-*, 40-$, 41-@, 42-#<br> 43-!, 44-@, 45-&, 46-$<br> 47-%, 48-$, 49-@, 50-#<br> 51-!, 52-%, 53-@, 54-&<br>55-*, 56-&, 57-!, 58-#<br> 59-$, 60-*, 61-@, 63-&<br> 64-!, 65-@, 66-#, 67-$<br> 68-%, 69-*, 70-), 71-!<br> 72-&, 73-@, 74-#, 75-$<br> 76-%, 77-*, 78-), 79-!<br> 80-@, 81-&, 82-$, 83-%<br> 84-*<br>, 85-!, 86-@, 87-#, 88-$<br> 89-%, 90-&, 91-*, 92-!<br> 93-@, 94-#, 95-$, 96-%<br> 97-*, 98-!, 99-@, 100-#</div>'
     blueButton.textContent = 'REVEAL'
     belowButtonText.textContent = 'Find your new number. Note the symbol beside the number.'
